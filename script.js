@@ -34,10 +34,10 @@ function insertar(){
         pokeId.innerText = `id: ${result[6][1]}`
 
         const pokeImagen = document.createElement('img')
-        pokeImagen.src = result[14][1].front_default
+        pokeImagen.src = result[15][1].front_default
 
         const pokeTipo = document.createElement('h3')
-        pokeTipo.innerText = `Tipo: ${result[16][1][0].type.name}`
+        pokeTipo.innerText = `Tipo: ${result[17][1][0].type.name}`
 
         const pokeHabilidad = document.createElement('h3')
         pokeHabilidad.innerText = `Habilidad: ${result[0][1][0].ability.name}`
