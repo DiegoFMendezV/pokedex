@@ -28,22 +28,22 @@ function insertar(){
         console.table(result)
 
         const pokeNombre = document.createElement('h2')
-        pokeNombre.innerText = `Nombre: ${result[10][1]}`
+        pokeNombre.innerText = `Nombre: ${result[11][1]}`
 
         const pokeId = document.createElement('h3')
-        pokeId.innerText = `id: ${result[6][1]}`
+        pokeId.innerText = `id: ${result[7][1]}`
 
         const pokeImagen = document.createElement('img')
-        pokeImagen.src = result[15][1].front_default
+        pokeImagen.src = result[16][1].front_default
 
         const pokeTipo = document.createElement('h3')
-        pokeTipo.innerText = `Tipo: ${result[17][1][0].type.name}`
+        pokeTipo.innerText = `Tipo: ${result[18][1][0].type.name}`
 
         const pokeHabilidad = document.createElement('h3')
         pokeHabilidad.innerText = `Habilidad: ${result[0][1][0].ability.name}`
 
         const contenedor = document.createElement('section')
-        contenedor.append(pokeNombre, pokeId, pokeImagen, pokeTipo, pokeHabilidad)
+        contenedor.append(pokeNombre, pokeImagen, pokeId, pokeTipo, pokeHabilidad)
 
 
         allItems.push(contenedor)
